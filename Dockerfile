@@ -11,7 +11,7 @@ COPY pom.xml .
 RUN ./mvnw package -DskipTests=true
 
 # second stage
-FROM openjdk:17-jdk-oracle
+FROM openjdk:26-jdk-oracle
 
 WORKDIR /runningapp
 
